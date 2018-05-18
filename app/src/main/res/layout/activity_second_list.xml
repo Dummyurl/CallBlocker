@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="#000000"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:enabled="false"
+            android:layout_marginRight="10dp"
+            android:text="Delete"
+            android:textColor="#ffffff"
+           android:background="@drawable/buttonbackground" />
+
+        <TextView
+            android:id="@+id/totalselected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="0 selected"
+            android:textSize="15dp"
+            android:textColor="#ffffff"/>
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/editsearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" 
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/rl1" 
+        android:visibility="gone"
+        android:hint="Enter first name"
+        android:background="@drawable/edittextbackgroun"
+        android:paddingLeft="10dp">
+
+        <requestFocus />
+    </EditText>
+
+   
+    <ListView
+        android:id="@+id/listnew"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editsearch"
+        android:background="@drawable/back"
+        android:dividerHeight="4px"
+         android:divider="#000000"
+        android:drawSelectorOnTop="false"
+        android:layout_marginTop="2dp" />
+
+    <TextView
+        android:id="@+id/empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="No_Number Are Added" 
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"/>
+
+</RelativeLayout>

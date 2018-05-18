@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background" >
+<LinearLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:background="@drawable/back">
+
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dip"
+            android:shrinkColumns="2"
+            android:stretchColumns="*" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/callbackground"
+                android:gravity="center_horizontal"
+                android:minHeight="180px" >
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_span="6"
+                    android:gravity="center"
+                    android:text="Anthem Infotech"
+                    android:textColor="#FFFFF0"
+                    android:textSize="22dp"
+                    android:textStyle="bold" >
+                </TextView>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+    <!-- <LinearLayout
+        android:id="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl1"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp" >
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dip"
+            android:background="#FF0000" />
+    </LinearLayout> -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp">
+
+        <Button
+            android:id="@+id/incomming"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonbackground"
+            android:padding="5dp"
+            android:text="InComming"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/outgoing"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/buttonbackground"
+            android:padding="5dp"
+            android:text="OutGoing"
+            android:textColor="#FFFFFF" 
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

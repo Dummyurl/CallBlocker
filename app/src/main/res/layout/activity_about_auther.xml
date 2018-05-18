@@ -1,0 +1,185 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     android:background="#FFFFFF">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/eye4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="false"
+                    android:text="Developer Details"
+                    android:textColor="#000000"
+                    android:textSize="19dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/eye4"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/addressicon" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:lineSpacingMultiplier="1.1"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:singleLine="false"
+                    android:text="@string/address"
+                    android:textColor="#000000"
+                    android:textSize="19dp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/linearemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp" >
+
+                <ImageView
+                    android:id="@+id/imageViewemail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="3dp"
+                    android:src="@drawable/emailicon" />
+
+                <TextView
+                    android:id="@+id/emailtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imageViewemail"
+                    android:paddingLeft="17dp"
+                    android:text="ashokkumar0136@gmail.com"
+                    android:textColor="#000000"
+                    android:textSize="19dp" 
+                    android:paddingTop="15dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/linear2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearemail"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp" >
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/callingicon" />
+
+                <TextView
+                    android:id="@+id/phonenumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imageView2"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="+91-xxxxxxxxxx"
+                    android:textColor="#000000"
+                    android:textSize="19dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp" >
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/phonecontacticon" />
+
+                <TextView
+                    android:id="@+id/mobnumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imageView3"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="+91-xxxxxxxxxx"
+                    android:textColor="#000000"
+                    android:textSize="19dp" />
+            </RelativeLayout>
+
+           <!--  <RelativeLayout
+                android:id="@+id/relativeeye4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout1"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp" >
+
+                <ImageView
+                    android:id="@+id/imageVieweye"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/webicon" />
+
+                <TextView
+                    android:id="@+id/texteye4u"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imageVieweye"
+                    android:paddingLeft="5dp"
+                    android:text="http://eye4u.in"
+                    android:textColor="#000000"
+                    android:textSize="19dp" />
+            </RelativeLayout>
+ -->
+            
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

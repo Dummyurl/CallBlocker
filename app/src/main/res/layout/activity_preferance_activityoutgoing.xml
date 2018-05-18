@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background" >
+
+    <LinearLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:background="@drawable/back">
+
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dip"
+            android:shrinkColumns="2"
+            android:stretchColumns="*" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/outgoingbackground"
+                android:gravity="center_horizontal"
+                android:minHeight="180px" >
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_span="6"
+                    android:gravity="center"
+                    android:textColor="#FFFFF0"
+                    android:textSize="22dp"
+                    android:textStyle="bold" >
+                </TextView>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    
+
+    <LinearLayout
+        android:id="@+id/rl3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl1"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        
+
+            <RadioGroup
+                android:id="@+id/radGroup2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingLeft="50dp" >
+
+                <RadioButton
+                    android:id="@+id/blockAllout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Block All Calls"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/blockUnsavedout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Block Unsaved Contacts"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/blockSavedout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Block Saved Contacts"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/blockFromListout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Block From List"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/cancelBlockerout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel All Block"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+            </RadioGroup>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rl4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl3"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp" >
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dip"
+            android:background="#FF0000" />
+    </LinearLayout>
+
+</RelativeLayout>
